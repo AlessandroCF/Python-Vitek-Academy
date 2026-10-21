@@ -1,0 +1,36 @@
+PLANTILLA DE LA ACTIVIDAD — TICKET 4 (para hacer en casa)
+============================================================
+
+Reporte de envíos desde un CSV sucio: clase Envio con costo(), función cargar_envios(ruta) que devuelve válidos y errores, y el reporte impreso.
+
+QUÉ HAY EN ESTA CARPETA
+  clase04.py ......... tu archivo de trabajo; completa los TODO.
+  envios.csv ........... el archivo del ticket (con filas dañadas a propósito); no lo "arregles".
+  verificar_ticket04.py .. verificador: te dice si tu trabajo da los resultados que espera el ticket.
+
+CÓMO USAR EL VERIFICADOR (práctica SIN nota)
+  Desde esta carpeta:   python verificar_ticket04.py
+  Corrígelo hasta que diga «Todo coincide». Eso aún NO es la entrega: es tu ensayo antes de escribirle al Tutor.
+
+RESULTADOS QUE ESPERA EL TICKET
+  - Envíos válidos  ->  5 (E001, E002, E004, E008, E009)
+  - Total cobrado  ->  ₡51.100 (2500 + 6300 + 15000 + 23000 + 4300)
+  - Líneas rechazadas  ->  5, en las líneas 4, 6, 7, 8 y 11
+  - Motivos  ->  peso no numérico · peso negativo · zona inválida · cliente vacío · faltan columnas
+
+PISTAS
+  - La línea 1 es el encabezado: empieza a numerar en 2.
+  - cargar_envios devuelve DOS cosas: return validos, errores.
+  - Una fila es válida solo si cumple las cuatro reglas del ticket; cada regla que falla es un motivo distinto.
+
+ADEMÁS DEBES RESPONDER
+  ¿Qué le pasaría a tu programa sin try/except con la fila E003?
+
+CÓMO ENTREGAR (Tutor del campus)
+1. Sube tu código a GitHub (repositorio público, con una carpeta o rama por semana según el ticket).
+2. Abre el chat del Tutor, escribe «Entrega Clase 4» y adjunta con el clip los archivos que pide el ticket.
+3. En el mismo mensaje pega, como texto: la salida del verificador, el enlace a tu repositorio y la salida de
+   «git log --oneline -3». Las capturas de pantalla son opcionales y ayudan.
+4. Responde la pregunta de explicación del ticket con tus palabras.
+Nunca pegues contraseñas, claves ni tokens reales. Puedes practicar con el Tutor todas las veces que quieras ANTES de
+escribir «Entrega Clase 4»: en este bloque tienes intentos ilimitados y con nivel 7 o más ganas el badge.

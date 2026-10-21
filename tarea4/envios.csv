@@ -1,0 +1,11 @@
+id,cliente,peso_kg,zona
+E001,Pulpería La Esquina,4,A
+E002,Super San Rafael,12,B
+E003,Abastecedor Los Ángeles,abc,A
+E004,Minisuper El Roble,30,C
+E005,Pulpería Doña Mary,-5,B
+E006,Super Buenos Aires,8,D
+E007,,6,A
+E008,Pulpería El Progreso,50,C
+E009,Minisuper Central,7,B
+E010,Super Las Palmas,9

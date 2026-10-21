@@ -1,0 +1,25 @@
+PS C:\Users\acola\Desktop\tarea4> & C:\Users\acola\AppData\Local\Programs\Python\Python314\python.exe c:/Users/acola/Desktop/tarea4/verificar_ticket04.py
+Verificador del Ticket #4
+
+  OK     existe la clase Envio -> True
+  OK     existe la función cargar_envios -> True
+Resultado esperado del reporte
+  OK     envíos válidos -> 5
+  OK     líneas rechazadas -> 5
+  OK     total cobrado -> 51100
+  OK     líneas rechazadas (número de línea; la 1 es el encabezado) -> [4, 6, 7, 8, 11]
+  OK     cada error trae un motivo -> True
+
+Requisitos del código
+  OK     usa try / except -> True
+  OK     lee con el módulo csv -> True
+
+Resultado: 9 de 9 comprobaciones correctas.
+Todo coincide. Pega estos resultados en tu entrega.
+PS C:\Users\acola\Desktop\tarea4> 
+
+
+
+¿qué le pasaría a tu programa sin try/except con la fila E003?
+
+Sin el bloque try/except, el programa intentaría convertir el valor "abc" de la fila E003 a un número entero utilizando int(). Esto generaría un ValueError y la ejecución se detendría, impidiendo procesar el resto del archivo. Gracias al manejo de excepciones, el error se registra y el programa continúa procesando las demás filas.
