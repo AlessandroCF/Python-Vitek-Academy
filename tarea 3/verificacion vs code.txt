@@ -1,0 +1,24 @@
+ C:\Users\acola\Desktop\tarea 3> & C:\Users\acola\AppData\Local\Programs\Python\Python314\python.exe "c:/Users/acola/Desktop/tarea 3/clase03.py"
+PS C:\Users\acola\Desktop\tarea 3> & C:\Users\acola\AppData\Local\Programs\Python\Python314\python.exe "c:/Users/acola/Desktop/tarea 3/verificar_ticket03.py"
+Verificador del Ticket #3
+
+  OK     existe la función agregar_producto -> True
+  OK     existe la función buscar_producto -> True
+  OK     existe la función productos_bajo_minimo -> True
+  OK     existe la función valor_total_inventario -> True
+  OK     existe la función encontrar_duplicados -> True
+Casos de prueba del ticket
+  OK     productos_bajo_minimo(inventario) -> ['P002', 'P003', 'P005']
+  OK     valor_total_inventario(inventario) -> 408950
+  OK     buscar_producto(inventario, "P999") -> None
+  OK     encontrar_duplicados([...]) -> {'P001': 3, 'P003': 2}
+  OK     agregar un producto nuevo sube el valor total en stock x precio -> 8000
+
+Requisitos y casos límite
+  OK     el inventario es un diccionario -> True
+  OK     agregar_producto NO pisa un código que ya existe -> 416950
+  OK     ninguna función imprime ni usa input() -> ''
+
+Resultado: 13 de 13 comprobaciones correctas.
+Todo coincide. Pega estos resultados en tu entrega.
+PS C:\Users\acola\Desktop\tarea 3> 

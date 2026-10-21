@@ -1,0 +1,36 @@
+PLANTILLA DE LA ACTIVIDAD — TICKET 3 (para hacer en casa)
+============================================================
+
+Inventario de bodega: cinco funciones en clase03.py (agregar_producto, buscar_producto, productos_bajo_minimo, valor_total_inventario, encontrar_duplicados).
+
+QUÉ HAY EN ESTA CARPETA
+  clase03.py ......... tu archivo de trabajo; completa los TODO.
+  verificar_ticket03.py .. verificador: te dice si tu trabajo da los resultados que espera el ticket.
+
+CÓMO USAR EL VERIFICADOR (práctica SIN nota)
+  Desde esta carpeta:   python verificar_ticket03.py
+  Corrígelo hasta que diga «Todo coincide». Eso aún NO es la entrega: es tu ensayo antes de escribirle al Tutor.
+
+RESULTADOS QUE ESPERA EL TICKET
+  - productos_bajo_minimo(inventario)  ->  ['P002', 'P003', 'P005']
+  - valor_total_inventario(inventario)  ->  408950
+  - buscar_producto(inventario, "P999")  ->  None
+  - encontrar_duplicados(["P001","P003","P001","P005","P003","P001"])  ->  {'P001': 3, 'P003': 2}
+  - agregar_producto con un producto nuevo  ->  el valor total sube en stock × precio
+
+PISTAS
+  - Cada producto puede ser otro diccionario: {"nombre": ..., "stock": ..., "minimo": ..., "precio": ...}.
+  - Para valor_total_inventario recorre inventario.values() y suma stock * precio.
+  - El verificador crea su propio inventario llamando a TU agregar_producto: no importa cómo guardes cada producto, mientras todas tus funciones usen la misma estructura.
+
+ADEMÁS DEBES RESPONDER
+  ¿Por qué guardaste el inventario en un diccionario y no en una lista?
+
+CÓMO ENTREGAR (Tutor del campus)
+1. Sube tu código a GitHub (repositorio público, con una carpeta o rama por semana según el ticket).
+2. Abre el chat del Tutor, escribe «Entrega Clase 3» y adjunta con el clip los archivos que pide el ticket.
+3. En el mismo mensaje pega, como texto: la salida del verificador, el enlace a tu repositorio y la salida de
+   «git log --oneline -3». Las capturas de pantalla son opcionales y ayudan.
+4. Responde la pregunta de explicación del ticket con tus palabras.
+Nunca pegues contraseñas, claves ni tokens reales. Puedes practicar con el Tutor todas las veces que quieras ANTES de
+escribir «Entrega Clase 3»: en este bloque tienes intentos ilimitados y con nivel 7 o más ganas el badge.
